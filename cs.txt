@@ -1,0 +1,49 @@
+# permissions
+# Add permissions
+chmod u+x <file_name>   add execute permission to owner
+chmod g+w <file_name>   add write permission to group
+chmod o+r <file_name>   add read permission to others
+
+#remove permissions
+chmod u-x <file_name>   remove execute permission to owner
+chmod g-w <file_name>   remove write permission to group
+chmod o-r <file_name>   remove read permission to others
+
+
+chmod u=rwx,g=rx,o=r <file_name>    set exact permissions
+
+
+#positional arg
+
+echo hello there 
+ $0   $1    $2
+
+<file_name>.sh hello there 
+                  1   2
+
+
+#Piping
+  |
+
+grep    used for searching
+
+
+#Output redirection
+ >    write to file
+echo hello world > file_name.txt
+
+>>    append to a file
+echo hello world > file_name.txt
+
+
+
+
+
+echo $? shows exit code of the last executed command
+0 or 1   last command executed Output
+
+
+${1,,}    parameter exapansion - ignore upper and lower cases
+
+
+
